@@ -22,7 +22,7 @@ function appendorder(order){
 function updateOrder(code){
 	console.log(code.ordernummer);
 	$.ajax({
-		url: "/firstapp/restservices/orders/"+code.ordernummer,
+		url: "/restservices/orders/"+code.ordernummer,
 		type: "put",
 		data: code,
 		success: function(code) {
@@ -48,7 +48,7 @@ function updateOrder(code){
 }
 function deleteOrder(code){
 	$.ajax({
-		url: "/firstapp/restservices/orders/"+code.ordernummer,
+		url: "/restservices/orders/"+code.ordernummer,
 		type: "delete",
 	});
 	$("#"+code.ordernummer).remove();
@@ -75,7 +75,7 @@ function password(){
 }
 
 function initPage() {
-	$.get("/firstapp/restservices/orders/Open", function(data){
+	$.get("/restservices/orders/Open", function(data){
 		window.sessionStorage.setItem("orders", JSON.stringify(data));
 		$.each(data, function(i, order){
 			appendorder(order);
@@ -99,12 +99,12 @@ function updateText(val) {
   }
 $("#button").click( function()
          {
-    		window.location = "http://localhost:4715/firstapp/afgerond.html";
+    		window.location = "/afgerond.html";
          }
 );
 $("#button2").click( function()
         {
-   		window.location = "http://localhost:4715/firstapp/toevoegen.html";
+   		window.location = "/toevoegen.html";
         }
 );
 
