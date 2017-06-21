@@ -1,6 +1,6 @@
 var max = 0;
 function initPage(){
-	$.get("/firstapp/restservices/orders", function(data){
+	$.get("/restservices/orders", function(data){
 		window.sessionStorage.setItem("orders", JSON.stringify(data));
 	});
 	var user2 = JSON.parse(window.sessionStorage.getItem("bestelling"));
@@ -53,7 +53,7 @@ $("#post").click(function(){
 		alert("Vul alle velden correct in!");
 	} else {
 	$.ajax({
-		url: "/firstapp/restservices/orders",
+		url: "/restservices/orders",
 		type: "post",
 		data: JSONdata,
 		succes: function(JSONdata){
@@ -69,7 +69,7 @@ $("#post").click(function(){
 		}
 	});
 	$.ajax({
-		url: "/firstapp/restservices/artikelen/"+user2.artikelnummer,
+		url: "/restservices/artikelen/"+user2.artikelnummer,
 		type: "delete",
 		succes: function(response){
 			console.log(response);
@@ -81,7 +81,7 @@ $("#post").click(function(){
 
 function besteld() {
 	alert("Order is verzonden! Zodra u het geld overmaakt naar NL99 ABNA 0123 4567 89 zal de order verder verwerkt worden! Als er binnen 2 weken nog geen geen geld is overgemaakt zal de order verwijdert worden. Voor meer informatie zie de pagina 'levering'");
-	window.location.href = "http://localhost:4715/firstapp/home_page.html";
+	window.location.href = "/home_page.html";
 }
 
 $(document).ready(initPage());
