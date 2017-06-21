@@ -14,7 +14,7 @@ function appendCountrySc(country){
 
 
 function initPage(){
-	$.get("/firstapp/restservices/artikelen/Shirts", function(data){
+	$.get("/restservices/artikelen/Shirts", function(data){
 		window.sessionStorage.setItem("data", JSON.stringify(data));
 		var i = 2;
 		$.each(data, function(i, country){
@@ -23,7 +23,7 @@ function initPage(){
 			}
 		});
 	});
-	$.get("/firstapp/restservices/artikelen/Schoenen", function(data){
+	$.get("/restservices/artikelen/Schoenen", function(data){
 		window.sessionStorage.setItem("data2", JSON.stringify(data));
 		var i = 2;
 		$.each(data, function(i, country){
