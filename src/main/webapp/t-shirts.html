@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="csspages/catalogus.css">
+<title>Shirts</title>
+</head>
+<body>
+
+<div class="container">
+<div id="header">
+	<ul>
+		 <li><a href="http://localhost:4715/firstapp/home_page.html">Home</a></li>
+		 <li><a href="http://localhost:4715/firstapp/blogs.html">Blogs</a></li>
+		 <li><a href="http://localhost:4715/firstapp/schoenen.html">Schoenen</a></li>
+		 <li><a href="http://localhost:4715/firstapp/t-shirts.html">Shirts</a></li>
+	</ul>
+</div>
+  
+<aside>
+  <h2>Filter artikelen</h2>
+				<div class="menuItem"><span>Kleur</span></div>
+				<form action="keuze">
+				  <input type="radio" name="kleur" value="wit"> wit<br>
+				  <input type="radio" name="kleur" value="zwart"> zwart<br>
+				  <input type="radio" name="kleur" value="blauw"> blauw <br>
+				  <input type="radio" name="kleur" value="rood"> rood <br>
+				</form><br>
+				<div class="menuItem">
+					<span>Getal filter:</span>
+				    <input type="range" name="rangePrijs" id="getal" value="50" min="1" max="100" oninput="textPrijs.value = getal.value">
+				    <br>
+				    <select id="keuze1">
+						<option value="groter">meer dan</option>
+						<option value="kleiner">minder dan</option>
+					</select>
+				    <label>&euro; </label><output name="textPrijs" id="textPrijs">50</output>
+				</div>
+			<button id="numberbutton" class="button">Filter op prijs</button>
+			<button class="button" id="reset">reset</button>
+</aside>
+
+<article>
+  <div id="countryList">
+			<div id="countries">
+			</div>
+		</div>
+</article>
+<footer><div class="informatie">
+	<a href="http://localhost:4715/firstapp/levering.html">Levering</a>
+	</div>
+	<div class="social">
+	<a href="https://www.facebook.com/melvin.demello.77"><img src="foto/twitter.png" alt="twitter" style="width:20px;height:20px;"> twitter</a>
+	<a href="https://www.facebook.com/melvin.demello.77"><img src="foto/facebook.png" alt="facebook" style="width:20px;height:20px;"> facebook</a>
+	<a href="https://www.facebook.com/melvin.demello.77"><img src="foto/instagram.png" alt="instagram" style="width:20px;height:20px;"> instagram</a>
+	</div>
+</footer>
+
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+<script type="text/javascript" src="javascript/shirts.js"></script>
+</body>
+</html>

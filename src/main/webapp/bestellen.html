@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <title>Home page</title>
+ <style></style>
+ <head><link rel="stylesheet" type="text/css" href="csspages/bestellen.css"></head>
+ <title>Artikel bestellen</title>
+ <body>
+	<div id="header">
+	<ul>
+		 <li><a href="http://localhost:4715/firstapp/home_page.html">Home</a></li>
+		 <li><a href="http://localhost:4715/firstapp/blogs.html">Blogs</a></li>
+		 <li><a href="http://localhost:4715/firstapp/schoenen.html">Schoenen</a></li>
+		 <li><a href="http://localhost:4715/firstapp/t-shirts.html">Shirts</a></li>
+	</ul>
+</div>
+	<div class="bestelling"><h2>Gekozen artikel:</h2>
+	<label id="prijs">prijs: &euro; </label><br>
+	<label id="type">type: </label><br>
+	<label id="kleur">kleur: </label>
+	</div>
+	<div class="gegevens">
+	<h1>Aflever Adres</h1>
+	<form id="bestelForm" onsubmit="return false">
+			<div class="menuItem"><span>Voornaam:</span><input name="voornaam" type="text" required/></div>
+			<div class="menuItem"><span>Achternaam:</span><input name="achternaam" type="text" required/></div>
+			<div class="menuItem"><span>Postcode:</span><input name="postcode" type="text" maxlength="7" required/></div>
+			<div class="menuItem"><span>Huisnummer:</span><input name="huisnummer" type="text" required/></div>
+			<div class="menuItem"><span>Land:</span><select name="land" id="keuze1">
+						<option value="nederland">Nederland</option>
+						<option value="belgië">België</option>
+					</select></div>
+			<div class="menuItem"><span>E-mail:</span><input name="e-mail" type="text" required/></div>
+			<div class="menuItem"><button class="button" id="post">Bestellen</button></div>
+	</form>
+	</div>
+	<footer><div class="informatie">
+	<a href="http://localhost:4715/firstapp/levering.html">Levering</a>
+	</div>
+	<div class="social">
+	<a href="https://www.facebook.com/melvin.demello.77"><img src="foto/twitter.png" alt="twitter" style="width:20px;height:20px;"> twitter</a>
+	<a href="https://www.facebook.com/melvin.demello.77"><img src="foto/facebook.png" alt="facebook" style="width:20px;height:20px;"> facebook</a>
+	<a href="https://www.facebook.com/melvin.demello.77"><img src="foto/instagram.png" alt="instagram" style="width:20px;height:20px;"> instagram</a>
+	</div>
+</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="javascript/bestellen.js"></script>
+ </body>
+</html>

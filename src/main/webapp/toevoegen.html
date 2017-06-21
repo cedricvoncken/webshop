@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+ <style></style>
+ <head><link rel="stylesheet" type="text/css" href="csspages/bestellen.css">
+ <title>Artikel Toevoegen</title></head>
+ <body>
+	<div id="header">
+	<ul>
+		 <li><a href="http://localhost:4715/firstapp/home_page.html">Home</a></li>
+		 <li><a href="http://localhost:4715/firstapp/bestellingen.html">Bestellingen</a></li>
+		 <li><a href="http://localhost:4715/firstapp/afgerond.html">Afgerond</a></li>
+		 <li><a href="http://localhost:4715/firstapp/toevoegen.html">Toevoegen</a></li>
+	</ul>
+</div>
+	<div class="gegevens">
+	<h1>Kledingstuk informatie</h1>
+	<form id="bestelForm" onsubmit="return false">
+			<div class="menuItem"><span>Type:</span><select name="type" id="keuze1">
+						<option value="t-shirt">t-shirt</option>
+						<option value="schoen">schoen</option>
+					</select></div>
+			<div class="menuItem"><span>Prijs:</span><input name="prijs" type="number" maxlength="5" step="0.01" required/></div>
+			<div class="menuItem"><span>Kleur:</span><input name="kleur" type="text" required/></div>
+			<div class="menuItem"><span>Afbeelding:</span><select name="type" id="keuze2">
+						<option value="shirt-wit">shirt-wit</option>
+						<option value="shirt-zwart">shirt-zwart</option>
+						<option value="shirt-rood">shirt-rood</option>
+						<option value="shirt-blauw">shirt-blauw</option>
+						<option value="schoen-wit">schoen-wit</option>
+						<option value="schoen-zwart">schoen-zwart</option>
+						<option value="schoen-rood">schoen-rood</option>
+						<option value="schoen-blauw">schoen-blauw</option>
+					</select></div>
+			<div class="menuItem"><button class="button" id="post">Toevoegen aan catalogus</button></div>
+	</form>
+	</div>
+	<footer><div class="informatie">
+	<a href="http://localhost:4715/firstapp/levering.html">Levering</a>
+	</div>
+	<div class="social">
+	<a href="https://www.facebook.com/melvin.demello.77"><img src="foto/twitter.png" alt="twitter" style="width:20px;height:20px;"> twitter</a>
+	<a href="https://www.facebook.com/melvin.demello.77"><img src="foto/facebook.png" alt="facebook" style="width:20px;height:20px;"> facebook</a>
+	<a href="https://www.facebook.com/melvin.demello.77"><img src="foto/instagram.png" alt="instagram" style="width:20px;height:20px;"> instagram</a>
+	</div>
+</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="javascript/toevoegen.js"></script>
+ </body>
+</html>
