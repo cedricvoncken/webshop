@@ -12,7 +12,7 @@ function appendCountry(country){
 }
 
 function initPage(){
-	$.get("/firstapp/restservices/artikelen/Shirts", function(data){
+	$.get("/restservices/artikelen/Shirts", function(data){
 		window.sessionStorage.setItem("data", JSON.stringify(data));
 		$.each(data, function(i, country){
 			appendCountry(country);
@@ -118,7 +118,7 @@ function verzend(country){
 	var bestelling = { "artikelnummer": country.artikelnummer, "prijs" : country.prijs, "type" : country.type, "kleur" : country.kleur, "afbeelding" : country.afbeelding};
 	window.sessionStorage.setItem("bestelling", JSON.stringify(bestelling));
 	
-	window.location = "http://localhost:4715/firstapp/bestellen.html";
+	window.location = "/bestellen.html";
 }
 
 $(document).ready(initPage());
