@@ -31,7 +31,7 @@ function password(){
 }
 
 function initPage() {
-	$.get("/firstapp/restservices/orders/Betaald", function(data){
+	$.get("/restservices/orders/Betaald", function(data){
 		$.each(data, function(i, order){
 			appendorder(order);
 		});
@@ -55,7 +55,7 @@ function updateText(val) {
 $(function() {
     $("#button").click( function()
          {
-    		window.location = "http://localhost:4715/firstapp/bestellingen.html";
+    		window.location = "/bestellingen.html";
          }
     );
 });
