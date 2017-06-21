@@ -1,6 +1,6 @@
 var max = 0;
 function initPage(){
-	$.get("/firstapp/restservices/artikelen", function(data){
+	$.get("/restservices/artikelen", function(data){
 		window.sessionStorage.setItem("artikelen", JSON.stringify(data));
 	});
 }
@@ -33,7 +33,7 @@ $("#post").click(function(){
 		alert("Vul alle velden in!");
 	else {
 	$.ajax({
-		url: "/firstapp/restservices/artikelen",
+		url: "/restservices/artikelen",
 		type: "post",
 		data: JSONdata,
 		succes: function(JSONdata){
