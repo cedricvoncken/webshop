@@ -80,7 +80,7 @@ $("#post").click(function(){
 });
 
 function besteld() {
-	alert("Order is verzonden! Zodra u het geld overmaakt naar NL99 ABNA 0123 4567 89 zal de order verder verwerkt worden! Als er binnen 2 weken nog geen geen geld is overgemaakt zal de order verwijdert worden. Voor meer informatie zie de pagina 'levering'");
+	alert("Order is verzonden! Zodra u het geld overmaakt naar:\n NL99 ABNA 0123 4567 89 \nzal de order verder verwerkt worden! Als er binnen 2 weken nog geen geen geld is overgemaakt zal de order verwijdert worden. Voor meer informatie zie de pagina 'levering'");
 	window.location.href = "/home_page.html";
 }
 
